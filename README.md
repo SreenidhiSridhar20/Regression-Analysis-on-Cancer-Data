@@ -5,12 +5,12 @@
 <h2>Key findings and recommendations</h2>
 <h3>Visualizations</h3>
 <p>Before analyzing the data to solve which factors affected cancer incidence rates, we put the raw data into a series of charts in order to visualize what it was telling us at the start. Below we have outlined the charts we used and explained the meaning of each chart.</p>
-<img src="Fig1_Cancer.jpg", alt="fig1">
+<img src="Results/Fig1_Cancer.jpg", alt="fig1">
 <p>Figures 1 and 2 show an initial scatter plot of the cancer data. Using incidenceRate as the base variable, we can interpret these graphs in terms of each of the other variables correlating with the incidenceRate variable. From Figure 1, the data is showing that there are only positive correlations with popEst2015 and PovertyEst. In Figure 2, the variables from recTrend to incidenceRate were modeled. From Figure 2, the data is showing a positive correlation between incidenceRate and the variables, avgAnnCount, deathRate, and avgDeathsPerYear. These graphs start to give us an idea of the variables we will pay more attention to in our analysis.</p>
-<img src="Fig2_Cancer.jpg", alt="fig2">
-<img src="Fig3_Cancer.jpg", alt="fig3">
+<img src="Results/Fig2_Cancer.jpg", alt="fig2">
+<img src="Results/Fig3_Cancer.jpg", alt="fig3">
 <p>Figure 6 shows that in most of the observations, the death rate from cancer has been about 300 per 100,000 people per county. Figure 7 shows the average deaths per county per year were under 5,000 from 2009-2013. Therefore, looking at these two graphs, the death rate and overall deaths per year seem to be falling.</p>
-<img src="Fig4_Cancer.jpg", alt="fig4">
+<img src="Results/Fig4_Cancer.jpg", alt="fig4">
 <p>From these visualizations, we can see that with the data provided variables like the poverty, population, and death rates may have an impact on the cancer incidences.</p>
 <ol><li><B>Regions of the country most prone to cancer</B></li>
 We divided all of the states into four regions as per the US Census bureau -<br>
@@ -19,7 +19,7 @@ Jersey, New York, and Pennsylvania<br>
 <U>Region 2:</U> Midwest- Illinois, Indiana, Michigan, Ohio, Wisconsin, Iowa, Kansas, Minnesota, Missouri, Nebraska, North Dakota, and South Dakota<br>
 <U>Region 3:</U> South- Delaware, Florida, Georgia, Maryland, North Carolina, South Carolina, Virginia, Washington, D.C, West Virginia, Alabama, Kentucky, Mississippi, Tennessee, Arkansas, Louisiana, Oklahoma, and Texas<br>
 <U>Region 4:</U> West- Arizona, Colorado, Idaho, Montana, Nevada, New Mexico, Utah, Wyoming, Alaska, California, Hawaii, Oregon, and Washington<br>
-<img src="Fig5_Cancer.jpg", alt="fig5">  
+<img src="Results/Fig5_Cancer.jpg", alt="fig5">  
 <p>We calculated the average incidence rate for each of the four regions based on which we found the following figures:
 We see that at 471.41 per 100,000, the North-East has the highest incidence-rate of Cancer in the United States.
 https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf </p><br>
@@ -27,10 +27,10 @@ https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf </p><br>
  <li><B>Four Level indicator variable</B></li>
 <p>The levels we chose to partition medIncome were Low, Very Low, High, and Very High. From the chart above, it is clear that Very Low has the highest incidence rate, followed by Low, then High, then finally Very High. This means that most counties have a very low median household income. Please click the following link to see the code that generated this chart:
 https://colab.research.google.com/drive/1dH5cABx4lLTya2bzVETr-UvidAxfnyZD?usp=sharing </p> <br>
-<img src="Fig6_Cancer.jpg", alt="fig6">
+<img src="Results/Fig6_Cancer.jpg", alt="fig6">
 <li><B>Correlation analysis</B></li>
 <p>From the generated correlation matrix above, many correlations between factors can be seen. One such correlation is between avgDeathsPerYear and avgAnnCount, with a correlation of 0.94. This has a very high positive correlation, indicating that as avgDeathsPerYear increases, so does avgAnnCount. This makes total sense since it is expected that as the incidences of cancer increases, the number of deaths would increase as well. Another strong correlation was between PovertyEst and avgDeathsPerYear with a correlation of 0.94. This also makes intuitive sense since it is expected that as poverty increases, more deaths will occur. </p>
-<img src="Fig7_Cancer.jpg", alt="fig7">
+<img src="Results/Fig7_Cancer.jpg", alt="fig7">
 <p>A very interesting correlation that can be seen is between avgAnnCount and PovertyEst, with a correlation of 0.89, which means that the poorer a county is, the more incidences of cancer there are. This could be linked to stress, nutrition, or many other factors, but further analysis would need to be done to find out. One of the more obvious or expected correlations is between avgAnnCount and popEst2015. These two variables have a correlation of 0.93. This means that the higher the population of a county is, the more people will get cancer, which is obvious. The only factor that is directly moderately correlated with incidenceRate is deathRate, with a correlation of 0.45. This means that as the incidence rate of cancer increases, the deaths from cancer will increase as well, which is obvious. No other factors had much correlation with incidenceRate directly. Please click the following link to see the code that generated this chart:
 https://colab.research.google.com/drive/1dH5cABx4lLTya2bzVETr-UvidAxfnyZD?usp=sharing </p><br>
 
